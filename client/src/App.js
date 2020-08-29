@@ -7,7 +7,8 @@ import ShopPage from "./page/shop/shop.component";
 import Header from "./components/header/header.component";
 import SignInAndSignUpPage from "./page/sign-in-and-sign-up/sign-in-and-sign-up.components";
 import CheckoutPage from "./page/checkout/checkout.component";
-import "./App.css";
+
+import { GlobalStyle } from "./global.styles";
 
 import { selectCurrentUser } from "./redux/user/user.selector";
 import { checkUserSession } from "./redux/user/user.actions";
@@ -20,6 +21,7 @@ const App = ({ checkUserSession, currentUser }) => {
 
   return (
     <div>
+      <GlobalStyle />
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />

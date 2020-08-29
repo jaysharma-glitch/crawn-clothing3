@@ -33,6 +33,7 @@ const StripeCheckoutButton = ({ price }) => {
       name="Gaerkaanooni"
       billingAddress
       shippingAddress
+      zipCode
       currency="inr"
       image="https://svgshare.com/i/CUz.svg"
       description={`Your total is $${price}`}
